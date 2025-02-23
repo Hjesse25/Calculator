@@ -10,11 +10,12 @@ do
         Console.WriteLine("2. Subtract");
         Console.WriteLine("3. Multiply");
         Console.WriteLine("4. Divide");
-        Console.WriteLine("5. Exit");
+        Console.WriteLine("5. Modulo");
+        Console.WriteLine("6. Exit");
 
         int choice = int.Parse(Console.ReadLine());
 
-        if (choice == 5)
+        if (choice == 6)
         {
             exit = true;
             return;
@@ -51,6 +52,10 @@ do
                     result = firstNumber / secondNumber;
                     Console.WriteLine($"{firstNumber} + {secondNumber} equals {result}");
                 }
+                break;
+            case 5:
+                result = firstNumber % secondNumber;
+                Console.WriteLine($"{firstNumber} % {secondNumber} equals {result}");
                 break;
         }
 
